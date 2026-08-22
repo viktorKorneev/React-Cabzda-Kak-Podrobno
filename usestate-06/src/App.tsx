@@ -10,13 +10,14 @@ export function App(props: any) {
     console.log("App rendering")
 
     let [ratingValue, setRatingValue] = useState<RatingValueType>(4);
+    let [accordioncollapsed, setAccordionCollapsed] = useState<boolean>(false)
 
 
 
     return (<div className={"App"}>
         {/*<OnOff />*/}
         {/*<OnOff />*/}
-        <Accordion titleValue={"Users"} collapsed={true}/>
+        <Accordion titleValue={"Users"} collapsed={accordioncollapsed} onClick={setAccordionCollapsed}/>
         {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
         {/*<UncontrolledAccordion titleValue={"Users"} />*/}
         {/*<UncontroledRating />*/}
