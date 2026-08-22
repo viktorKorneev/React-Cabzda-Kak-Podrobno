@@ -2,7 +2,8 @@
 type AccordionPropsType = {
     titleValue: string
     collapsed: boolean
-    onClick: (value: boolean) => void
+    // onClick: (value: boolean) => void
+    onChange: () => void
 }
 
 export function Accordion(props: AccordionPropsType) {
@@ -10,7 +11,8 @@ export function Accordion(props: AccordionPropsType) {
 
     return (
         <div>
-            <AccordionTitle onClick={props.onClick} collapsed={props.collapsed} title={props.titleValue} />
+            {/*<AccordionTitle onClick={props.onClick} collapsed={props.collapsed} title={props.titleValue} />*/}
+            <AccordionTitle onChange={props.onChange} title={props.titleValue} />
             {props.collapsed && <AccordionBody/>}
         </div>
     )
@@ -20,14 +22,16 @@ export function Accordion(props: AccordionPropsType) {
 
 type AccordionTitlePropsType = {
     title: string
-    onClick: (value: boolean) => void
-    collapsed: boolean
+    // onClick: (value: boolean) => void
+    // collapsed: boolean
+    onChange: (collapsed: boolean) => void
 }
 
 function AccordionTitle(props: AccordionTitlePropsType) {
     console.log("UncontrolledAccordionTitle rendering")
     return (
-        <h3 onClick={() => props.onClick(!props.collapsed)}>-- {props.title} --</h3>
+        // <h3 onClick={() => props.onClick(!props.collapsed)}>-- {props.title} --</h3>
+        <h3 onClick={props.onChange}>-- {props.title} --</h3>
     )
 }
 
