@@ -9,24 +9,24 @@ export function Accordion(props: AccordionPropsType) {
 
     return (
         <div>
-            <UncontrolledAccordionTitle title={props.titleValue}/>
-            {props.collapsed && <UncontrolledAccordionBody/>}
+            <AccordionTitle title={props.titleValue}/>
+            {props.collapsed && <AccordionBody/>}
         </div>
     )
 }
 
-type UncontrolledAccordionTitlePropsType = {
+type AccordionTitlePropsType = {
     title: string
 }
 
-function UncontrolledAccordionTitle(props: UncontrolledAccordionTitlePropsType) {
+function AccordionTitle(props: AccordionTitlePropsType) {
     console.log("UncontrolledAccordionTitle rendering")
     return (
         <h3>-- {props.title} --</h3>
     )
 }
 
-function UncontrolledAccordionBody() {
+function AccordionBody() {
     console.log("UncontrolledAccordionBody rendering")
     return <ul>
         <li>1</li>
