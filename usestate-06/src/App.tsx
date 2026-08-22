@@ -9,15 +9,16 @@ import {useState} from "react";
 export function App(props: any) {
     console.log("App rendering")
 
-    let [ratingValue, setRatingValue] = useState<RatingValueType>(4);
-    let [accordioncollapsed, setAccordionCollapsed] = useState<boolean>(false)
+    // let [ratingValue, setRatingValue] = useState<RatingValueType>(4);
+    // let [accordioncollapsed, setAccordionCollapsed] = useState<boolean>(false)
+    let [on, setOn] = useState<boolean>(false)
 
 
 
     return (<div className={"App"}>
+        <OnOff onClick={setOn} value={on}/>
         {/*<OnOff />*/}
-        {/*<OnOff />*/}
-        <Accordion titleValue={"Users"} collapsed={accordioncollapsed} onClick={setAccordionCollapsed}/>
+        {/*<Accordion titleValue={"Users"} collapsed={accordioncollapsed} onClick={setAccordionCollapsed}/>*/}
         {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
         {/*<UncontrolledAccordion titleValue={"Users"} />*/}
         {/*<UncontroledRating />*/}
