@@ -5,6 +5,7 @@ import {action} from "storybook/actions";
 
 
 export default {
+    title: "Components/Accordion",
     component: Accordion,
 }
 
@@ -35,7 +36,7 @@ export const CollapsedAccordion = () => {
 export const OpenedAccordion = () => {
     return <Accordion titleValue={"Opened Accordion"}
                       collapsed={true}
-                      onChange={() => {}}/>
+                      onChange={onChangeHandler}/>
 }
 
 export const AccordionDemo = () => {
