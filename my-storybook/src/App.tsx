@@ -24,16 +24,16 @@ export function App(props: any) {
     <Accordion titleValue={"Users"} collapsed={accordioncollapsed} onChange={() => {setAccordionCollapsed(!accordioncollapsed)}}/>
     {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
     <UncontrolledAccordion titleValue={"Users"} />
-    {/*<UncontroledRating />*/}
+    {/*<UncontrolledRating />*/}
     {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
 
     <UncontrolledOnOff onChange={setSwitchOn} /> {switchOn.toString()}
 
 
-    {/*<UncontroledRating />*/}
-    {/*<UncontroledRating />*/}
-    {/*<UncontroledRating />*/}
-    {/*<UncontroledRating />*/}
+    {/*<UncontrolledRating />*/}
+    {/*<UncontrolledRating />*/}
+    {/*<UncontrolledRating />*/}
+    {/*<UncontrolledRating />*/}
 
 
     {/*<OnOff />*/}

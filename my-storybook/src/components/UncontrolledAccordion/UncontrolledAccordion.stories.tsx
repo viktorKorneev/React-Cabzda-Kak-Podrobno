@@ -1,13 +1,12 @@
-import {useState} from "react";
+// import {useState} from "react";
 // import type {Meta, StoryObj} from "@storybook/react-vite";
-import {action} from "storybook/actions";
-import {OnOff} from "./OnOff";
-
+import {UncontrolledAccordion} from "./UncontrolledAccordion";
+// import {action} from "storybook/actions";
 
 
 export default {
-    title: "Components/OnOff",
-    component: OnOff,
+    title: "Components/UncontrolledAccordion",
+    component: UncontrolledAccordion,
 }
 
 // --------------------------------------------------
@@ -26,12 +25,9 @@ export default {
 // }
 // -----------------------------------------------------
 
-const onChangeHandler = action("onChange")
 
-export const OnMode = () => <OnOff on={true} onChange={onChangeHandler}/>
-export const OffMode = () => <OnOff on={false} onChange={onChangeHandler}/>
 
-export const ModeChanging = () => {
-    const [value, setValue] = useState<boolean>(true);
-    return <OnOff on={value} onChange={setValue}/>
+export const UncontrolledAccordionCollapsedAccordion = () => {
+    return <UncontrolledAccordion titleValue={"Users"} />
 }
+

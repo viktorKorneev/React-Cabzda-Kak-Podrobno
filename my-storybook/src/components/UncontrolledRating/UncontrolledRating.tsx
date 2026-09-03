@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export function UncontroledRating() {
+export function UncontrolledRating() {
     let [value, setValue] = useState(0)
 
 

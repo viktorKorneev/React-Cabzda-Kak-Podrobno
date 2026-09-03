@@ -1,13 +1,13 @@
 import {useState} from "react";
 // import type {Meta, StoryObj} from "@storybook/react-vite";
 import {action} from "storybook/actions";
-import {OnOff} from "./OnOff";
+import {UncontrolledOnOff} from "./UncontrolledOnOff";
 
 
 
 export default {
-    title: "Components/OnOff",
-    component: OnOff,
+    title: "Components/UncontrolledOnOff",
+    component: UncontrolledOnOff,
 }
 
 // --------------------------------------------------
@@ -28,10 +28,16 @@ export default {
 
 const onChangeHandler = action("onChange")
 
-export const OnMode = () => <OnOff on={true} onChange={onChangeHandler}/>
-export const OffMode = () => <OnOff on={false} onChange={onChangeHandler}/>
+export const UncontrolledOnOffOnMode = () => <UncontrolledOnOff onChange={onChangeHandler}/>
+export const UncontrolledOnOffOffMode = () => <UncontrolledOnOff onChange={onChangeHandler}/>
 
-export const ModeChanging = () => {
-    const [value, setValue] = useState<boolean>(true);
-    return <OnOff on={value} onChange={setValue}/>
+export const UncontrolledOnOffModeChanging = () => {
+    let [switchOn, setSwitchOn] = useState<boolean>(false)
+    return (
+        <>
+            <UncontrolledOnOff onChange={setSwitchOn}/>
+            {switchOn.toString()}
+        </>
+
+    )
 }

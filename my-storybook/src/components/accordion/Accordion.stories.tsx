@@ -1,5 +1,5 @@
 import {useState} from "react";
-import type {Meta, StoryObj} from "@storybook/react-vite";
+// import type {Meta, StoryObj} from "@storybook/react-vite";
 import {Accordion} from "./Accordion";
 import {action} from "storybook/actions";
 
