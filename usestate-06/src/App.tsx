@@ -1,10 +1,10 @@
 import {OnOff} from "./components/OnOff/OnOff.tsx";
-import {UncontrolledAccordion} from "./components/accordion/UncontrolledAccordion.tsx";
-import {UncontroledRating} from "./components/rating/UncontrolledRating.tsx";
+import {UncontrolledAccordion} from "./components/UncontrolledAccordion/UncontrolledAccordion.tsx";
+import {UncontroledRating} from "./components/UncontrolledRating/UncontrolledRating.tsx";
 import {Rating, type RatingValueType} from "./components/rating/Rating.tsx";
 import {Accordion} from "./components/accordion/Accordion.tsx";
 import {useState} from "react";
-import {UncontrolledOnOff} from "./components/OnOff/UncontrolledOnOff.tsx";
+import {UncontrolledOnOff} from "./components/UncontrolledOnOff/UncontrolledOnOff.tsx";
 
 
 export function App(props: any) {
@@ -21,7 +21,7 @@ export function App(props: any) {
         {/*<OnOff on={switchOn} onChange={ setSwitchOn }/>*/}
         {/*<OnOff />*/}
         {/*<Accordion titleValue={"Users"} collapsed={accordioncollapsed} onClick={setAccordionCollapsed}/>*/}
-        {/*<Accordion titleValue={"Users"} collapsed={accordioncollapsed} onChange={() => {setAccordionCollapsed(!accordioncollapsed)}}/>*/}
+        <Accordion titleValue={"Users"} collapsed={accordioncollapsed} onChange={() => {setAccordionCollapsed(!accordioncollapsed)}}/>
         {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
         <UncontrolledAccordion titleValue={"Users"} />
         {/*<UncontroledRating />*/}
