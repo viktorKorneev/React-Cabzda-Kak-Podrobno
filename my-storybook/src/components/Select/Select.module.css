@@ -1,0 +1,15 @@
+.main {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc;
+}
+
+.item {
+    color: red;
+}
+
+.title {
+    font-weight: bold;
+    color: blue;
+}

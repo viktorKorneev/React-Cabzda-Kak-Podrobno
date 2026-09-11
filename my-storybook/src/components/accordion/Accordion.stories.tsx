@@ -58,5 +58,5 @@ export const AccordionDemo = () => {
                           {title: "Artem", value: 2},
                           {title: "Viktor", value: 3},
                           {title: "Valera", value: 4}]}
-                      onClick={onClickCallback}/>
+                      onClick={(value) => { alert(`user with ID ${value} should be happy`)}}/>
 }
