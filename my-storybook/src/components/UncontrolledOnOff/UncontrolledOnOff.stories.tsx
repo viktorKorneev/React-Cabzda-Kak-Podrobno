@@ -28,8 +28,8 @@ export default {
 
 const onChangeHandler = action("onChange")
 
-export const UncontrolledOnOffOnMode = () => <UncontrolledOnOff onChange={onChangeHandler}/>
-export const UncontrolledOnOffOffMode = () => <UncontrolledOnOff onChange={onChangeHandler}/>
+export const UncontrolledOnOffOnMode = () => <UncontrolledOnOff defaultOn={true} onChange={onChangeHandler}/>
+export const UncontrolledOnOffOffMode = () => <UncontrolledOnOff defaultOn={false} onChange={onChangeHandler}/>
 
 export const UncontrolledOnOffModeChanging = () => {
     let [switchOn, setSwitchOn] = useState<boolean>(false)

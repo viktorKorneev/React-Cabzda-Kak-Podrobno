@@ -21,13 +21,13 @@ export function App(props: any) {
     {/*<OnOff on={switchOn} onChange={ setSwitchOn }/>*/}
     {/*<OnOff />*/}
     {/*<Accordion titleValue={"Users"} collapsed={accordioncollapsed} onClick={setAccordionCollapsed}/>*/}
-    <Accordion titleValue={"Users"} collapsed={accordioncollapsed} onChange={() => {setAccordionCollapsed(!accordioncollapsed)}}/>
+    {/*<Accordion titleValue={"Users"} collapsed={accordioncollapsed} onChange={() => {setAccordionCollapsed(!accordioncollapsed)}}/>*/}
     {/*<UncontrolledAccordion titleValue={"Menu"} />*/}
-    <UncontrolledAccordion titleValue={"Users"} />
+    {/*<UncontrolledAccordion titleValue={"Users"} />*/}
     {/*<UncontrolledRating />*/}
     {/*<Rating value={ratingValue} onClick={setRatingValue}/>*/}
 
-    <UncontrolledOnOff onChange={setSwitchOn} /> {switchOn.toString()}
+    {/*<UncontrolledOnOff onChange={setSwitchOn} /> {switchOn.toString()}*/}
 
 
     {/*<UncontrolledRating />*/}

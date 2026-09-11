@@ -25,8 +25,6 @@ export default {
 // }
 // -----------------------------------------------------
 
-
-
 export const UncontrolledAccordionCollapsedAccordion = () => {
     return <UncontrolledAccordion titleValue={"Users"} />
 }
