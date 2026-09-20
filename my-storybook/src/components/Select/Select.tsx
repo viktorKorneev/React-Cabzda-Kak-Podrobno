@@ -27,6 +27,7 @@ export function Select({value, onChange, items}: SelectPropsType) {
             </div>
 
             {open && items.map(item => {
+
                 const onChangeHandler = () => {
                     onChange(item.value)
                     setOpen(false)
