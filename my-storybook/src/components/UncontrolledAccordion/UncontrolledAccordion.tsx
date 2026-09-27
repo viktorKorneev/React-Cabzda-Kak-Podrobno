@@ -13,7 +13,7 @@ export function UncontrolledAccordion(props: UncontrolledAccordionPropsType) {
 
     // const [collapsed, setCollapsed] = useState(false)
 
-    let [collapsed, dispatch] = useReducer(reducer, false)
+    let [state, dispatch] = useReducer(reducer, { collapsed: false })
 
     return (
         <div>
@@ -22,7 +22,7 @@ export function UncontrolledAccordion(props: UncontrolledAccordionPropsType) {
                 dispatch({type: TOGGLE_CONSTANT})
             }}/>
             {/*<button onClick={ () => {setCollapsed(!collapsed)} }>TOGGLE</button>*/}
-            {collapsed && <UncontrolledAccordionBody/>}
+            {!state.collapsed && <UncontrolledAccordionBody/>}
         </div>
     )
 }
