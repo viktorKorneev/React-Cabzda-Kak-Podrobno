@@ -15,7 +15,7 @@ export const AnalogClockView = ({date}:ClockViewProosType) => {
 
     return <div className={styles.clock}>
         <div className={styles["analog-clock"]}>
-            <div className={`${styles.dial} ${styles.seconds}`} style={minutesStyle} />
+            <div className={`${styles.dial} ${styles.seconds}`} style={secondsStyle} />
             <div className={`${styles.dial} ${styles.minutes}`} style={minutesStyle} />
             <div className={`${styles.dial} ${styles.hours}`} style={hoursStyle} />
         </div>

@@ -79,8 +79,7 @@ export const Clock = (props: PropsType) => {
         }, 1000)
 
         return () => {
-            debugger;
-            // clearInterval(intervalID)
+             clearInterval(intervalID)
         }
     }, []);
 
